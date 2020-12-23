@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: darkslategray;
+}
+
+a {
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  color: lightgreen;
+  background-color: transparent;
+  transition: 0.3s;
+  transition-delay: 1s;
+  overflow: hidden;
+}
+a span {
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1) {
+  top: 0px;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, lightgreen);
+  transition: 0.5s;
+}
+a span:nth-child(2) {
+  right: 0px;
+  top: -100%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, lightgreen);
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(3) {
+  bottom: 0px;
+  right: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, lightgreen);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+a span:nth-child(4) {
+  left: 0px;
+  bottom: -100%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(360deg, transparent, lightgreen);
+  transition: 0.5s;
+  transition-delay: 0.75s;
+}
+a:hover {
+  box-shadow: 0 0 10px lightgreen, 0 0 40px lightgreen, 0 0 80px lightgreen;
+  background-color: lightgreen;
+  color: #0b300b;
+}
+a:hover span:nth-child(1) {
+  left: 100%;
+}
+a:hover span:nth-child(2) {
+  top: 100%;
+}
+a:hover span:nth-child(3) {
+  right: 100%;
+}
+a:hover span:nth-child(4) {
+  bottom: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
